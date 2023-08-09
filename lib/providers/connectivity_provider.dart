@@ -1,32 +1,26 @@
 import 'package:connectivity_plus/connectivity_plus.dart';
-import 'package:flutter/foundation.dart';
-import 'package:pr_miro_well_flutter/modals/connectivity_model.dart';
+import 'package:flutter/material.dart';
+import 'package:pr_miro_well_flutter/models/connectivity_model.dart';
 
 
-
-
-class ConnectivityProvier extends ChangeNotifier {
+class ConnectivityProvider extends ChangeNotifier {
   Connectivity connectivity = Connectivity();
 
   ConnectivityModel connectivityModel =
-      ConnectivityModel(ConnectivityStatus: "Waiting");
+      ConnectivityModel(connectivityStatus: "waiting");
 
-  void checkInternetConnectvity() {
-    connectivityModel.ConnectivityStream = connectivity.onConnectivityChanged
+  void checkInternetConnectivity() {
+    connectivityModel.connectivityStream = connectivity.onConnectivityChanged
         .listen((ConnectivityResult connectivityResult) {
-      switch (connectivityResult) {
-        case ConnectivityResult.wifi:
-          connectivityModel.ConnectivityStatus = "wifi";
-          notifyListeners();
-          break;
-        case ConnectivityResult.mobile:
-          connectivityModel.ConnectivityStatus = "mobile";
-          notifyListeners();
-          break;
-        default:
-          connectivityModel.ConnectivityStatus = "Waiting..";
-          notifyListeners();
-          break;
+      if (connectivityResult == ConnectivityResult.wifi) {
+        connectivityModel.connectivityStatus = "WiFi";
+        notifyListeners();
+      } else if (connectivityResult == ConnectivityResult.mobile) {
+        connectivityModel.connectivityStatus = "MobileData";
+        notifyListeners();
+      } else {
+        connectivityModel.connectivityStatus = "waiting";
+        notifyListeners();
       }
     });
   }
