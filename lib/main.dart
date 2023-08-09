@@ -7,6 +7,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'providers/connectivity_provider.dart';
 import 'providers/url_provider.dart';
 import 'views/screens/HomePage.dart';
+import 'views/screens/Splash_screens.dart';
 import 'views/screens/introduction_screen.dart';
 
 void main() async {
@@ -49,6 +50,7 @@ void main() async {
         debugShowCheckedModeBanner: false,
         routes: {
           '/': (context) => Intro_screen(),
+          'Splash_Scr':(context) => Splash_screens(),
           'HomePage':(context) => const HomePage(),
 
         },
