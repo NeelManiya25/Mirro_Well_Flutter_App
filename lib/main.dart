@@ -7,6 +7,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'providers/connectivity_provider.dart';
 import 'providers/url_provider.dart';
 import 'views/screens/HomePage.dart';
+import 'views/screens/introduction_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -47,7 +48,7 @@ void main() async {
         themeMode: ThemeMode.system,
         debugShowCheckedModeBanner: false,
         routes: {
-          '/': (context) => introduction_screen(),
+          '/': (context) => Intro_screen(),
           'HomePage':(context) => const HomePage(),
 
         },
@@ -55,3 +56,4 @@ void main() async {
     ),
   );
 }
+
