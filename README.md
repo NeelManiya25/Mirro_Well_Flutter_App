@@ -1,3 +1,43 @@
+Project Definition: My Browser App (Mirror Wall)
+
+Project Description:
+The aim of this project is to develop a mobile browser application using the Flutter framework
+and WebView technology. The application will enable users to browse the internet within the app
+by using a WebView widget to display web content from websites. This project is designed to
+enhance the knowledge and skills of IT students in mobile app development using Flutter.
+
+Project Objectives:
+- To develop a mobile browser application using the Flutter framework and WebView
+technology.
+- To enable users to browse the internet within the app using a WebView widget to display web
+content.
+- To implement key features such as bookmarks, pullToDownRefresh, refresh, backward/forward
+& home buttons.
+- To optimize the application for performance and user experience.
+- To enhance the knowledge and skills of IT students in mobile app development using Flutter.
+
+Project Technologies:
+- Dart language
+- Flutter framework with MVC and Provider architecture
+
+Project Requirements:
+- Knowledge of programming languages such as Dart.
+- Familiarity with the Flutter framework and WebView technology.
+- Understanding of user interface design principles and best practices.
+- Experience with mobile app development and related tools such as Android Studio or VS Code.
+- Ability to work independently.
+
+Project Deliverables:
+- A functional mobile browser application developed using Flutter and WebView.
+- Source code and documentation for the application.
+- Project report detailing the development process, challenges faced, and solutions implemented.
+- Presentation and demonstration of the application to a panel of reviewers.
+
+Project Evaluation:
+- User satisfaction with the application’s functionality and UI/UX
+- Quality of code and project structure
+- Presentation quality and clarity of communication
+
 <img src = "https://github.com/NeelManiya25/pr_Mirro_well_flutter/assets/131368162/e22f278b-f12f-40fe-9aed-0f347f7a4008" width ="250px">
 <img src = "https://github.com/NeelManiya25/pr_Mirro_well_flutter/assets/131368162/27b524d6-42a8-48f9-af35-254647ec9e4c" width ="250px">
 <img src = "https://github.com/NeelManiya25/pr_Mirro_well_flutter/assets/131368162/a99a1d30-d0be-475b-b972-81aabc98b4c5" width ="250px">
